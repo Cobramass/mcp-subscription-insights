@@ -1,0 +1,32 @@
+{
+  "_note": "Synthetic SaaS subscription dataset for the demo. Deliberately includes messy rows (missing mrr, malformed date, null plan, negative seats, unknown plan) so the server can demonstrate graceful degradation instead of demo-ware that only works on clean input.",
+  "plans": {
+    "free": { "mrr": 0 },
+    "starter": { "mrr": 29 },
+    "growth": { "mrr": 99 },
+    "scale": { "mrr": 299 },
+    "enterprise": { "mrr": 999 }
+  },
+  "customers": [
+    { "id": "C-1001", "name": "Northwind Traders", "plan": "scale", "mrr": 299, "signupDate": "2024-02-11", "lastActiveDate": "2026-06-26", "seatsLicensed": 25, "seatsUsed": 23, "supportTicketsLast30d": 1, "paymentFailures": 0, "planChanges": [{ "date": "2025-08-01", "from": "growth", "to": "scale" }] },
+    { "id": "C-1002", "name": "Tailspin Toys", "plan": "growth", "mrr": 99, "signupDate": "2024-05-20", "lastActiveDate": "2026-04-02", "seatsLicensed": 10, "seatsUsed": 2, "supportTicketsLast30d": 6, "paymentFailures": 2, "planChanges": [{ "date": "2026-03-15", "from": "scale", "to": "growth" }] },
+    { "id": "C-1003", "name": "Contoso Ltd", "plan": "enterprise", "mrr": 999, "signupDate": "2023-11-03", "lastActiveDate": "2026-06-27", "seatsLicensed": 120, "seatsUsed": 118, "supportTicketsLast30d": 3, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1004", "name": "Fabrikam Inc", "plan": "starter", "mrr": 29, "signupDate": "2025-09-14", "lastActiveDate": "2026-02-10", "seatsLicensed": 5, "seatsUsed": 1, "supportTicketsLast30d": 0, "paymentFailures": 1, "planChanges": [] },
+    { "id": "C-1005", "name": "Adventure Works", "plan": "growth", "mrr": 99, "signupDate": "2024-08-30", "lastActiveDate": "2026-06-20", "seatsLicensed": 12, "seatsUsed": 11, "supportTicketsLast30d": 0, "paymentFailures": 0, "planChanges": [{ "date": "2025-12-01", "from": "starter", "to": "growth" }] },
+    { "id": "C-1006", "name": "Wide World Importers", "plan": "scale", "mrr": 299, "signupDate": "2024-01-19", "lastActiveDate": "2026-05-01", "seatsLicensed": 40, "seatsUsed": 9, "supportTicketsLast30d": 8, "paymentFailures": 3, "planChanges": [{ "date": "2026-04-20", "from": "enterprise", "to": "scale" }] },
+    { "id": "C-1007", "name": "Proseware", "plan": "starter", "mrr": 29, "signupDate": "2025-12-01", "lastActiveDate": "2026-06-25", "seatsLicensed": 3, "seatsUsed": 3, "supportTicketsLast30d": 1, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1008", "name": "Lucerne Publishing", "plan": null, "mrr": null, "signupDate": "2024-07-07", "lastActiveDate": "2026-06-15", "seatsLicensed": 8, "seatsUsed": 6, "supportTicketsLast30d": 2, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1009", "name": "Coho Vineyard", "plan": null, "mrr": 99, "signupDate": "2024-09-09", "lastActiveDate": "2026-06-24", "seatsLicensed": 10, "seatsUsed": 7, "supportTicketsLast30d": 0, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1010", "name": "Alpine Ski House", "plan": "scale", "mrr": 299, "signupDate": "2023-06-22", "lastActiveDate": "2026-01-05", "seatsLicensed": 30, "seatsUsed": 4, "supportTicketsLast30d": 9, "paymentFailures": 4, "planChanges": [{ "date": "2025-11-10", "from": "enterprise", "to": "scale" }, { "date": "2026-01-02", "from": "scale", "to": "growth" }] },
+    { "id": "C-1011", "name": "Margie's Travel", "plan": "starter", "mrr": 29, "signupDate": "2026-01-15", "lastActiveDate": "2026-06-27", "seatsLicensed": 4, "seatsUsed": 4, "supportTicketsLast30d": 0, "paymentFailures": 0, "planChanges": [{ "date": "2026-05-01", "from": "free", "to": "starter" }] },
+    { "id": "C-1012", "name": "The Phone Company", "plan": "growth", "mrr": 99, "signupDate": "2024-03-03", "lastActiveDate": "2026-03-30", "seatsLicensed": 15, "seatsUsed": 3, "supportTicketsLast30d": 5, "paymentFailures": 1, "planChanges": [] },
+    { "id": "C-1013", "name": "Litware Inc", "plan": "enterprise", "mrr": 999, "signupDate": "2023-04-18", "lastActiveDate": "2026-06-27", "seatsLicensed": 200, "seatsUsed": 176, "supportTicketsLast30d": 4, "paymentFailures": 0, "planChanges": [{ "date": "2025-02-01", "from": "scale", "to": "enterprise" }] },
+    { "id": "C-1014", "name": "Bellows College", "plan": "growth", "mrr": 99, "signupDate": "2025-03-21", "lastActiveDate": "2026-06-22", "seatsLicensed": 20, "seatsUsed": 14, "supportTicketsLast30d": 1, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1015", "name": "Trey Research", "plan": "scale", "mrr": 299, "signupDate": "2024-10-10", "lastActiveDate": "2026-06-26", "seatsLicensed": 35, "seatsUsed": 31, "supportTicketsLast30d": 2, "paymentFailures": 0, "planChanges": [{ "date": "2026-02-14", "from": "growth", "to": "scale" }] },
+    { "id": "C-1016", "name": "Graphic Design Inst", "plan": "starter", "mrr": 29, "signupDate": "2025-11-30", "lastActiveDate": "2026-05-18", "seatsLicensed": 6, "seatsUsed": 2, "supportTicketsLast30d": 3, "paymentFailures": 2, "planChanges": [] },
+    { "id": "C-1017", "name": "Humongous Insurance", "plan": "enterprise", "mrr": 999, "signupDate": "2022-09-01", "lastActiveDate": "2026-06-27", "seatsLicensed": 350, "seatsUsed": 340, "supportTicketsLast30d": 6, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1018", "name": "Blue Yonder Airlines", "plan": "mega", "mrr": 1500, "signupDate": "2024-12-12", "lastActiveDate": "2026-06-19", "seatsLicensed": 60, "seatsUsed": 55, "supportTicketsLast30d": 2, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1019", "name": "Woodgrove Bank", "plan": "scale", "mrr": 299, "signupDate": "not-a-date", "lastActiveDate": "2026-06-21", "seatsLicensed": 28, "seatsUsed": 20, "supportTicketsLast30d": 1, "paymentFailures": 0, "planChanges": [] },
+    { "id": "C-1020", "name": "First Up Consultants", "plan": "growth", "mrr": 99, "signupDate": "2025-07-04", "lastActiveDate": "2026-06-23", "seatsLicensed": -5, "seatsUsed": 9, "supportTicketsLast30d": 0, "paymentFailures": 0, "planChanges": [] }
+  ]
+}
