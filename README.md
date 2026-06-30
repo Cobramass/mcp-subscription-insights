@@ -1,5 +1,7 @@
 # Subscription Insights — demo MCP server
 
+[![CI](https://github.com/Cobramass/mcp-subscription-insights/actions/workflows/ci.yml/badge.svg)](https://github.com/Cobramass/mcp-subscription-insights/actions/workflows/ci.yml)
+
 A small, **production-shaped** [Model Context Protocol](https://modelcontextprotocol.io)
 server that gives an LLM (Claude, or any MCP client) three **workflow-shaped** tools over a
 SaaS subscription dataset:
